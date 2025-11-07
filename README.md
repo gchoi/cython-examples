@@ -6,6 +6,10 @@
 
 Before you start, make sure you have [Just Command Runner](https://github.com/casey/just) installed.
 
+* macOS: `brew install just`
+* Debian/Ubuntu: `sudo apt install just`
+* Windows: `choco install just`
+
 ```bash
 $ git clone https://github.com/gchoi/cython-examples.git
 $ cd cython-examples
