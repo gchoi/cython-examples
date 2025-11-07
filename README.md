@@ -20,9 +20,9 @@ $ just venv
 
 Run with Jupyter Notebooks:
 
-* [cython-example-1](notebooks/cython-example-1.ipynb)
-* [cython-example-2](notebooks/cython-example-2.ipynb)
-* [cython-example-3](notebooks/cython-example-3.ipynb)
+* [Example-1.ipynb](./Example-1.ipynb) - Sum of squares
+* [Example-2.ipynb](./Example-2.ipynb) - Monte Carlo simulation to calculate PI
+* [Example-3.ipynb](./Example-3.ipynb) - Image processing (sharpen filter for high resolution image)
 
 ## Running Python Examples
 
