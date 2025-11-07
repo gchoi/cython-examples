@@ -4,8 +4,6 @@
 
 ## Setting Up Development Environment
 
----
-
 Before you start, make sure you have [Just Command Runner](https://github.com/casey/just) installed.
 
 ```bash
@@ -16,8 +14,6 @@ $ just venv
 
 ## Jupyter Notebooks
 
----
-
 Run with Jupyter Notebooks:
 
 * [Example-1.ipynb](./Example-1.ipynb) - Sum of squares
@@ -25,8 +21,6 @@ Run with Jupyter Notebooks:
 * [Example-3.ipynb](./Example-3.ipynb) - Image processing (sharpen filter for high resolution image)
 
 ## Running Python Examples
-
----
 
 ### Build Cython extensions
 
