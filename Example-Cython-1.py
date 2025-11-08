@@ -1,5 +1,5 @@
 """
-Example 1: Sum of Squares
+Example 1: Sum of Squares (Cython)
 """
 
 import time, timeit
@@ -9,7 +9,6 @@ from cython_mods.sum_of_squares import fast_sum_of_squares
 MAX_ITER = 20000
 
 if __name__ == "__main__":
-    start = time.time()
     result = fast_sum_of_squares(MAX_ITER)
 
     time_iterations = timeit.timeit(lambda: fast_sum_of_squares(MAX_ITER), number=1)

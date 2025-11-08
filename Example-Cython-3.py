@@ -1,10 +1,11 @@
 """
-Example 3: Image Processor: Sharpen Filter
+Example 3: Image Processor: Sharpen Filter (Cython)
 """
+
 from cython_mods.image_processor import sharpen_image_cython
 from PIL import Image
 import numpy as np
-import time as py_time  # Renaming the Python time module to avoid conflict
+import time as py_time
 import matplotlib.pyplot as plt
 
 
@@ -13,7 +14,7 @@ if __name__ == "__main__":
     image_path = './test-images/background.jpg'
     image = Image.open(image_path).convert('RGB')
 
-    # Convert the image to a NumPy array
+    # Convert the image to a numPy array
     image_array = np.array(image)
 
     # Time the sharpening with Cython
@@ -33,7 +34,6 @@ if __name__ == "__main__":
     plt.subplot(1, 2, 2)
     plt.imshow(sharpened_image)
     plt.title("Sharpened Image")
-
     plt.show()
 
     # Print the time taken for Cython processing

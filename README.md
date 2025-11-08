@@ -1,7 +1,5 @@
 # cython-examples
 
-> **Reference**: [Run Your Python Code up to 80x Faster Using the Cython Library](https://towardsdatascience.com/run-your-python-code-up-to-80x-faster-using-the-cython-library/?utm_campaign=tds%20variable&utm_medium=email&_hsenc=p2ANqtz-_c5HiWe-kqVA-fHMGhC8qvQy6IF3FiCTd_zzW5n8kEk-FH-iQiY9EM9QptohU9-t6R-A0Fc-uNf1q8oM53Gne8lIVmlA&_hsmi=373735563&utm_source=newsletter)
-
 ## Setting Up Development Environment
 
 Before you start, make sure you have [Just Command Runner](https://github.com/casey/just) installed.
@@ -34,10 +32,26 @@ $ just build
 
 Running the command above will build the Cython extensions and generate the `.so` files in [cython_mods] folder.
 
-### Run Python Examples
+### Run Standard Python Examples
 
 ```bash
-$ just run-example-1   # Sum of squares
-$ just run-example-2   # Monte Carlo simulation to calculate PI
-$ just run-example-3   # Image processing (sharpen filter for high resolution image)
+$ just run-example-python-1   # Sum of squares
+$ just run-example-python-2   # Monte Carlo simulation to calculate PI
+$ just run-example-python-3   # Image processing (sharpen filter for high resolution image)
 ```
+
+### Run Cython Examples
+
+```bash
+$ just run-example-cython-1   # Sum of squares
+$ just run-example-cython-2   # Monte Carlo simulation to calculate PI
+$ just run-example-cython-3   # Image processing (sharpen filter for high resolution image)
+```
+
+## Results Comparison
+
+|                              | Standard Python (sec) | Cython (sec) | Speed Improvement       |
+|------------------------------|-----------------------|--------------|-------------------------|
+| Example 1 - Sum of Squares   | 20.4330076250         | 0.0000009170 | 22,282,451 times faster |
+| Example 2 - Monte Carlo PI   | 27.96932              | 1.33899      | 21 times faster         |
+| Example 3 - Image Processing | 2.86349               | 0.14742      | 20 times faster         |

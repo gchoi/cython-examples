@@ -50,20 +50,38 @@ clean-up:
     rm -r monte_carlo.c
     rm -r image_processor.c
 
-# Run example-1
-run-example-1:
+# Run example 1 for Cython
+run-example-cython-1:
     . {{ VENV }}/bin/activate && \
     uv sync && \
-    uv run Example-1.py
+    uv run Example-Cython-1.py
 
-# Run example-2
-run-example-2:
+# Run example 1 for Python
+run-example-python-1:
     . {{ VENV }}/bin/activate && \
     uv sync && \
-    uv run Example-2.py
+    uv run Example-Python-1.py
 
-# Run example-3
-run-example-3:
+# Run example 2 for Cython
+run-example-cython-2:
     . {{ VENV }}/bin/activate && \
     uv sync && \
-    uv run Example-3.py
+    uv run Example-Cython-2.py
+
+# Run example 2 for Python
+run-example-python-2:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run Example-Python-2.py
+
+# Run example 3 for Cython
+run-example-cython-3:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run Example-Cython-3.py
+
+# Run example 3 for Python
+run-example-python-3:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run Example-Python-3.py

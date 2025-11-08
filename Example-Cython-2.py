@@ -1,5 +1,5 @@
 """
-Example 2: Monte Carlo Simulation to Calculate PI
+Example 2: Monte Carlo Simulation to Calculate PI (Cython)
 """
 
 import time
@@ -10,7 +10,6 @@ NUM_SAMPLES = 100000000
 
 
 if __name__ == "__main__":
-    # Benchmark the Cython function
     start_time = time.time()
     pi_estimate = monte_carlo_pi(num_samples=NUM_SAMPLES)
     end_time = time.time()
